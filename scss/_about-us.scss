@@ -1,0 +1,55 @@
+.card-container{
+    margin-top: 1.5em;
+    height: fit-content;
+}
+.card{
+    width: 40%;
+    margin: 2em auto;
+    box-shadow: 0 0 1em rgba($color: #000000, $alpha: 0.3);
+    img{
+        width: 100%;
+    }
+    h4{
+        margin: 1em 0;
+    }
+}
+
+
+.presentation{
+    box-sizing: border-box;
+    position: relative;
+    padding: 2em 1em;
+    background: $color-pri;
+    color: rgb(202, 202, 202);
+    height: 100%;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.description{
+    box-sizing: border-box;
+    position: relative;
+    height: 60%;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.service-card{
+    margin: 2em auto;
+    box-shadow: 0 0 1em rgba($color: #000000, $alpha: 0.3);
+    &:hover{
+        .presentation{
+            height: 40%;
+            background: $color-sec;
+            color: black;
+        }
+        .description{
+            opacity: 1;
+
+        }
+    }
+}
