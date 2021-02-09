@@ -5,10 +5,10 @@
 body{
     font-family: 'Poppins', sans-serif;
     @media #{$width-xsmall}{
-        font-size: $font-size*0.5;
+        font-size: $font-size*0.7;
     }
     @media #{$width-small}{
-        font-size: $font-size*0.7;
+        font-size: $font-size*0.8;
     }
     @media #{$width-medium}{
         font-size: $font-size*1;
@@ -45,6 +45,6 @@ section{
     padding: 0 1em;
     text-align: center;
     >p{
-        margin: 1.5em 2em;
+        margin: 2.5em;
     }
 }
