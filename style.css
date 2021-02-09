@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@font-face {
+  font-family: cassannet;
+  src: url(./cassannet.ttf);
+}
+header {
+  height: 100vh;
+}
+
+nav {
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 1em;
+}
+nav ul li:last-of-type {
+  margin: 0;
+}
+
+.logo {
+  font-family: "Potta One", cursive;
+}
+
+.container {
+  height: 90vh;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.container .text-container {
+  width: 70%;
+  margin: auto;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .text-container button {
+  margin-top: 1em;
+}
+.container img {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  right: 0;
+  height: 100vh;
+}
+
+.slanted {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: -2;
+  background: #1D1D1D;
+}
+
+.slanted-back {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 20vh;
+  z-index: -3;
+  background: #F79BA8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 480px) {
+  body {
+    font-size: 0.5em;
+  }
+}
+@media (min-width: 48em) {
+  body {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 64em) {
+  body {
+    font-size: 1em;
+  }
+}
+@media (min-width: 85.375em) {
+  body {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 120em) {
+  body {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 160em) {
+  body {
+    font-size: 3em;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    font-size: 3em;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: none;
+  background: #1D1D1D;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.burger {
+  display: none;
+}
+
+section {
+  margin-top: 7em;
+  padding: 0 1em;
+  text-align: center;
+}
+section > p {
+  margin: 1.5em 2em;
+}
+
+.card-container {
+  margin-top: 1.5em;
+}
+
+.card {
+  padding-bottom: 1em;
+  width: 40%;
+  margin: 2em auto;
+  position: relative;
+  background-color: #1D1D1D;
+  border: 0.1em solid #1D1D1D;
+  color: white;
+}
+.card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: -2;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 4px, #F79BA8 0, #F79BA8 6px);
+  border: 2px solid #F79BA8;
+}
+.card img {
+  width: 100%;
+}
+.card h4 {
+  margin: 1em 0;
+}
+
+@media (max-width: 640px) {
+  nav ul {
+    display: none;
+  }
+  nav .burger {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  header img {
+    display: none;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+@media (min-width: 600px) {
+  .text-container {
+    width: 40%;
+  }
+
+  .slanted {
+    width: 70%;
+    height: 60vh;
+    -webkit-clip-path: polygon(100% 1%, 0 100%, 100% 100%);
+            clip-path: polygon(100% 1%, 0 100%, 100% 100%);
+  }
+
+  .slanted-back {
+    width: 75%;
+    height: 70vh;
+    -webkit-clip-path: polygon(100% 1%, 0 100%, 100% 100%);
+            clip-path: polygon(100% 1%, 0 100%, 100% 100%);
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 20%;
+  }
+}/*# sourceMappingURL=style.css.map */
