@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina web de mercadotecnia">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    <link rel="stylesheet preconnect" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-        crossorigin="anonymous" lazyload>
+        crossorigin="anonymous">
 </head>
 <body>
     <header>
         <nav>
             <h1 class="logo">LOUDvoice</h1>
             <ul>
-                <li><a href="about-us">Sobre Nosotros</a></li>
-                <li><a href="our-work">Servicios</a></li>
-                <li><a href="clients">Clientes</a></li>
+                <li><a href="#about-us">Sobre Nosotros</a></li>
+                <li><a href="#our-work">Servicios</a></li>
+                <li><a href="#clients">Clientes</a></li>
             </ul>
-            <div class="burger">
+            <button class="burger">
                 <i class="fas fa-bars fa-2x"></i>
-            </div>
+            </button>
         </nav>
+
+        <!-- overlay ffor burger menu -->
+        <div class="overlay overHiden">
+            <a href="#about-us">Sobre Nosotros</a>
+            <a href="#our-work">Servicios</a>
+            <a href="#clients">Clientes</a>
+        </div>
+
         <div class="container">
             <div class="text-container">
                 <h2>Nos dedicamos a que el mundo conozca tu marca</h2>
-                <button>Trabaja con nosotros</button>
+                <a href="" id="call-to-action" class="btn">Trabaja Con Nosotros</a>
             </div>
             <img src="./img/imagen-inicio.png" alt="confident man with his arms crossed">
         </div>
         <div class="slanted"></div>
         <div class="slanted-back"></div>
     </header>
+    <script src="./scripts/overlay.js"></script>
     <main>
         <section id="about-us">
             <h2>Podemos ayudarte con <br/><span class="typewriter"></span></h2>
@@ -47,65 +57,68 @@
                     <img src="./img/conexion.jpg" alt="">
                     <div class="text">
                         <h4>Conexion</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Adipisci dignissimos facere eligendi quas? Dolorem, dignissimos.</p>
+                        <p>es importante poder escuchar, conocer y entender a nuestros clientes; 
+                            sólo así podemos ofrecerles valor real a través de nuestro negocio.</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="./img/estrategia.jpg" alt="">
                     <div class="text">
                         <h4>Estrategia</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Adipisci dignissimos facere eligendi quas? Dolorem, dignissimos.</p>
+                        <p>el marketing es comunicar de manera efectiva. Enviar el mensaje correcto, 
+                            a la persona indicada, a traved del medioa adecuado y en el momento oportuno</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="./img/profesionalismo.jpg" alt="">
                     <div class="text">
                         <h4>Profesionalismo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Adipisci dignissimos facere eligendi quas? Dolorem, dignissimos.</p>
+                        <p>Nuestro gran objetivo es atraer y hacer felices a los clientes.
+                             La mejor publicidad es la que hacen los clientes satisfechos</p>
                     </div>
                 </div>
             </div>
         </section>
-        <script src="./scripts/typeWriter.js"></script>
+        <script defer src="./scripts/typeWriter.js"></script>
 
         <section id="our-work">
             <h2>Servicios Que Ofrecemos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nesciunt impedit debitis eaque, 
-                id delectus natus itaque minima, dolore laudantium eos laborum beatae libero minus.</p>
+            <p>Estudio LOUDvoice ofrece una amplia gama de servicios y productos que se adaptan 
+                a las particulares necesidades de cada cliente, con el objetivo de brindarle soluciones eficientes basadas en la Honestidad, Responsabilidad, 
+                Confidencialidad y Profesionalismo que le permitan crear valor agregado a su negocio.</p>
 
             <!-- first row of service card-->
             <div class="card-container">
                 <div class="service-card">
                     <div class="presentation">
-                        <i class="fas fa-briefcase fa-4x"></i>
-                        <h4>Resultados</h4>
+                        <i class="fas fa-bullhorn fa-4x"></i>
+                        <h4>Marketing</h4>
                     </div>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Adipisci dignissimos facere eligendi quas?</p>
+                        <p>Exploraremos, crearemos y entregaremos valor en su mercado. 
+                            Nuestro Marketing identificara necesidades y deseos no realizados. ademas de Definir, 
+                            medir y cuantificar el tamaño del mercado y el lucro potencial.</p>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="presentation">
-                        <i class="fas fa-briefcase fa-4x"></i>
-                        <h4>Resultados</h4>
+                        <i class="fas fa-tags fa-4x"></i>
+                        <h4>Branding</h4>
                     </div>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Adipisci dignissimos facere eligendi quas? Dolorem, dignissimos.</p>
+                        <p> Nuestro branding dara peso a su marca y mostrara todas las cualidades que tiene, para que los clientes puedan conocer 
+                            sus valores, la visión que tiene y que la diferencia de otras.</p>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="presentation">
-                        <i class="fas fa-briefcase fa-4x"></i>
-                        <h4>Resultados</h4>
+                        <i class="fas fa-search-plus fa-4x"></i>
+                        <h4>SEO</h4>
                     </div>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Adipisci dignissimos facere eligendi quas? Dolorem, dignissimos.</p>
+                        <p> Nuestro trabajo de SEO(search engine optimization)
+                            mejorara el posicionamiento de tu sitio web en 
+                            la lista de resultados de Google, Bing, u otros buscadores</p>
                     </div>
                 </div>
             </div>
@@ -114,53 +127,109 @@
             <div class="card-container">
                 <div class="service-card">
                     <div class="presentation">
-                        <i class="fas fa-briefcase fa-4x"></i>
-                        <h4>Resultados</h4>
+                        <i class="fas fa-image fa-4x"></i>
+                        <h4>Fotografia</h4>
                     </div>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Adipisci dignissimos facere eligendi quas? Dolorem, dignissimos.</p>
+                        <p>La fotografía es una herramienta muy potente. Tiene una gran 
+                            influencia en la decisión de compra de un producto o servicio, 
+                            por ello es importante para unabuena estrategia de marketing.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="presentation">
+                        <i class="fas fa-video fa-4x"></i>
+                        <h4>Videos</h4>
+                    </div>
+                    <div class="description">
+                        <p>Son un medio ideal de alcanzar a las nuevas generaciones de clientes, 
+                            ademas de conseguir conectar con los usuarios de una manera rápida, directa y emocional.</p>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="presentation">
                         <i class="fas fa-briefcase fa-4x"></i>
-                        <h4>Resultados</h4>
+                        <h4>Consultoria</h4>
                     </div>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Adipisci dignissimos facere eligendi quas? Dolorem, dignissimos.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="presentation">
-                        <i class="fas fa-briefcase fa-4x"></i>
-                        <h4>Resultados</h4>
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Adipisci dignissimos facere eligendi quas? Dolorem, dignissimos.</p>
+                        <p>diseñaremos una estrategia de marketing que permita alcanzar los objetivos 
+                            que tengas definidos. Estas estrategias estarán centradas en su negocio, 
+                            junto a los productos y mercados con los que operan</p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="clients">
             <h2>Nuestros Clientes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam architecto 
-                repudiandae quas dolor, eaque porro voluptate sequi veritatis! Quas, 
-                sed? Ducimus similique tempore dolorum, eos in perferendis veritatis natus numquam.</p>
+            <p>Trabajamos comprometidos para lograr los mejores resultados, 
+                nuestra pasión es adecuarnos y entender su necesidad brindando soluciones.
+                Estos son solo algunos de los comentarios de clientes satisfechos
+            </p>
 
             <div class="client-container">
-                <img src="./img/clients/Car Badge Vector.svg" alt="">
-                <img src="./img/clients/Car Badge Vector.svg" alt="">
-                <img src="./img/clients/Car Badge Vector.svg" alt="">
-                <img src="./img/clients/Car Badge Vector.svg" alt="">
-                <img src="./img/clients/Car Badge Vector.svg" alt="">
-                <img src="./img/clients/Car Badge Vector.svg" alt="">
-                <img src="./img/clients/Car Badge Vector.svg" alt="">
-                <img src="./img/clients/Car Badge Vector.svg" alt="">
+                <div class="client-container">
+                    <img src="./img/clients/Car Badge Vector.svg" alt="">
+                </div>
+                <div class="client-container">
+                    <img src="./img/clients/Car Badge Vector.svg" alt="">
+                </div>
+                <div class="client-container">
+                    <img src="./img/clients/Car Badge Vector.svg" alt="">
+                </div>
+                <div class="client-container">
+                    <img src="./img/clients/Car Badge Vector.svg" alt="">
+                </div>
+                <div class="client-container">
+                    <img src="./img/clients/Car Badge Vector.svg" alt="">
+                </div>
+                <div class="client-container">
+                    <img src="./img/clients/Car Badge Vector.svg" alt="">
+                </div>
+                <div class="client-container">
+                    <img src="./img/clients/Car Badge Vector.svg" alt="">
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="top-row">
+                <ul class="link-list">
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Contactanos</a></li>
+                    <li><a href="">Prensa</a></li>
+                    <li><a href="">Carreras</a></li>
+                </ul>
+                <ul class="link-list">
+                    <li><a href="">Accesibilidad</a></li>
+                    <li><a href="">Referencias</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Afiliados</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <a class="icon" href="https://es-la.facebook.com/"><i class="fab fa-facebook 4x"></i></a>
+                    </li>
+                    <li>
+                        <a class="icon" href="https://www.instagram.com/"><i class="fab fa-instagram 4x"></i></a>
+                    </li>
+                    <li>
+                        <a class="icon" href="https://twitter.com"><i class="fab fa-twitter 4x"></i></a>
+                    </li>
+                    <li>
+                        <a class="icon" href="https://www.linkedin.com"><i class="fab fa-linkedin 4x"></i></a>
+                    </li>
+                </ul>
+        </div>
+        <div class="bottom-row">
+            <div class="link-container">
+                <ul class="link-list">
+                    <li><a href="">Condiciones</a></li>
+                    <li><a href="">Seguridad</a></li>
+                    <li>LOUDvoice 2020</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script defer src="./scripts/fixButton.js"></script>
 </body>
 </html>

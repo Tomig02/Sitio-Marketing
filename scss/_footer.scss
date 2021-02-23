@@ -1,0 +1,45 @@
+footer{
+    margin-top: 4em;
+    padding: 2em 0;
+    background: $color-pri;
+    a{
+        color: $color-sec;
+        font-weight: bold;
+    }
+    .top-row{
+        margin: 0 10%;
+        margin-bottom: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .link{
+            margin-bottom: 2em;
+            &:last-of-type{
+                margin: 0;
+            }
+        }
+        ul{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            li{
+                margin-bottom: 1em;
+                &:last-of-type{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .bottom-row{
+        color: $color-sec;
+        font-weight: bold;
+        ul{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .icon{
+        font-size: 1.5em;
+    }
+}

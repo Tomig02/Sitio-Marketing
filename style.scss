@@ -30,18 +30,48 @@ $width-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 @import "./scss/header";
 @import "./scss/general";
 @import "./scss/about-us";
+@import "./scss/footer";
+
+.fixed{
+    padding: 0;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2%;
+    right: 2vh;
+    background: white;
+    &::after{
+        border-radius: 50%;
+    }
+}
+
 
 .client-container{
     padding: 0 2em;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(10em, 1fr));
     gap: 2em;
-    img{
-        width: 200px;
+    align-items: center;
+    .client-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 10em;
+            height: 10em;
+        }
     }
+    
 }
 
-@media (max-width: 599px){
+
+@keyframes fadeIn{
+    from{opacity: 0};
+    to {opacity: 1};
+}
+
+@media (max-width: 699px){
     nav{
         ul{
             display: none;
@@ -53,24 +83,30 @@ $width-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
     .container{
         width: 100%;
     }
-    header img{
-        display: none;
+    header {
+        img{
+            display: none;
+        }    
     }
     .card{
-        width: 50%;
+        width: 60%;
     }
     .service-card{
+        background: white;
         width: 60%;
         margin-top: 2em;
         .presentation{
-            height: 10em;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+            height: 40%;
+            background: $color-sec;
+            color: black;
+        }
+        .description{
+            z-index: 1;
+            opacity: 1;
         }
     }
 }
-@media (min-width: 600px){
+@media (min-width: 700px){
     .text-container{
         width: 40%;
     }

@@ -30,15 +30,38 @@ a{
     text-decoration: none;
     color: black;
 }
-button{
-    padding: 0.5em 1em;
-    border: none;
-    background: $color-pri;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+ul{
+    list-style: none;
 }
-.burger{
-    display: none;
+.btn{
+    margin-top: 1em;
+    padding: 1.5vh 4%;
+    border: 1px solid $color-pri;
+    color: $color-pri;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: $color-pri;
+        z-index: -1;
+        transition: all 0.2s;
+      }
+    &:hover{
+        color: white;
+        border: 1px solid white;
+        &::after{
+            width: 100%;
+        }
+    }
 }
 section{
     margin-top: 7em;
@@ -47,4 +70,10 @@ section{
     >p{
         margin: 2.5em;
     }
+}
+button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }

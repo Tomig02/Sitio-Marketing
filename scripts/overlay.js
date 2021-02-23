@@ -1,13 +1,13 @@
 const overlay= document.querySelector(".overlay");
-const callToAction= document.querySelector("#call-to-action");
+const button= document.querySelector(".burger");
 
 
-callToAction.addEventListener("click", function(){
-    overlay.style.display = "block";
-});
-overlay.addEventListener("click", function(e){
-    const tar = e.target.classList.value;
-    if(tar === "overlay"){
-        overlay.style.display = "none";       
-    }
+button.addEventListener("click", () => {
+    if(overlay.classList.contains("overHiden")){
+        button.classList.add("bg-flip")
+        overlay.classList.remove("overHiden");
+    }else{
+        button.classList.remove("bg-flip")
+        overlay.classList.add("overHiden");
+    }   
 });
